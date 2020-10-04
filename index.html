@@ -2,36 +2,80 @@
 layout: default
 title: Home
 ---
+<div class="container">
+  <div class="row">
+    <div class="d-flex flex-row" style="margin-top:50px">
+      <div style="margin-right:10px;">
+        <img style="max-width:80px;" class="img-fluid" src="/public/images/logo.png" />
+      </div>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+      <div style="font-size: 52px;">
+        <span
+          style="font-family: 'Source Sans Pro', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 200;"><span
+            style="font-family: 'Source Sans Pro', sans-serif;font-weight:900">sifar</span>ventures</span>
+      </div>
+    </div>
   </div>
-  {% endfor %}
-</div>
+  <div class="row">
+    <div style="font-family: 'DM Sans'; font-size: 18;margin-top:30px;">
+      <p>👋 Hustlers,</p>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+      <p>After spending 30+ years combined in the industry and working for multiple startups in different roles,
+        Vishwesh
+        and
+        Akshay decided to come together and start Sifar Ventures. Why are we calling it Sifar? Read it here <Sifar -
+          name explanation>. Why together? We understand and complement each other very well, and we value our
+          friendship a lot.
+          We bring in a unique blend of technology, product, and people’s perspective while working together. We are
+          also a
+          people magnet. We aim to bring in the best of the people together under the “Sifar Ventures” umbrella to help
+          founders in their journey.
+          Meet Akshay and Vishwesh in detail here. (link to our bio)</p>
+
+      <p>At Sifar Ventures, we are on a mission to help startup founders, hustlers, from day 0 (Sifar). We want to
+        become
+        part of their journey right from discovery, validation, technology choices, building initial MVP, raising
+        funds,
+        hiring the right people to help them find the right product-market fit, and scaling further. We would get
+        involved
+        at every stage with the founders, stay hands-on, and if we cannot do it ourselves, we will make the right
+        connections to enable founders to find the answers.</p>
+
+      <p>At Sifar Ventures, our goal is to practice thematic early-stage investing with a focus on solving global
+        problems
+        and providing highly active, hands-on support to founders. We have been investing in startups in an individual
+        capacity and via various syndicates on angel.co. And now, we are setting on a journey to build our team of
+        like-minded investors. We are not just focusing on the “deal-flow” but concentrating on the domain, problem,
+        technology, and, most notably, people/founders. So we would like to invest in what we understand and believe
+        in:
+        SaaS, fintech, edtech, deeptech, consumer tech, e-commerce, m-commerce, fitness, electric vehicles, etc. We
+        are
+        okay to miss out on some significant opportunities in sectors which we are not experts in like FMCG, crypto,
+        etc.
+        Our goal is to add “value” beyond investment. Value for us means Empathy to understand founders and listen to
+        them
+        and be present for them. Value for us means help founders fill the knowledge gaps. Value for us means making
+        those
+        right connections. Value for us means building trust, and trust means quality delivered consistently.
+        Here is a peak in our current portfolio.</p>
+
+      <p>In our career and life, we have always invested in people more than products. We are what we are because of
+        the
+        people who trusted us, worked with us, and invested in us. Industry leaders like Satish Dharmaraj (investor in
+        Acompli, Astro), Kevin Henrikson (Founder Acompli), <Add a couple of leaders here> who trusted us, and helped
+          us
+          gain some fantastic experience in our career and life inspire us a lot. We are merely passing it on,
+          becoming
+          enablers for future founders. We are here to build relationships that last far beyond investment.</p>
+
+      <p>As lead investors of Sifar Ventures, we promise to always work from the realm of trust and integrity.</p>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="d-flex flex-row" style="margin-left:-20px;">
+      <img class="img-fluid" src="/public/images/vj.jpeg" style="max-width:150px" />
+      <img class="img-fluid" src="/public/images/ad.jpeg" style="max-width:150px" />
+    </div>
+  </div>
 </div>
