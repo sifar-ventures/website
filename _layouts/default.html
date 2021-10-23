@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-  {% include head.html %}
-
-  <body>
-
-    {% include sidebar.html %}
-
-    <div class="container">
-      {{ content }}
+  <div class="top-black-bar"></div>
+  {% include head.html %} {% include topbar.html %}
+  <body class="layout">
+    <div class="content container">{{ content }}</div>
+    <div class="footer container" style="padding-bottom: 20px">
+      <div class="container" style="font-family: 'Montserrat'">
+        <div class="row">
+          <div
+            class="col-12 d-flex flex-md-row flex-column justify-content-center"
+          >
+            <span style="margin-right: 10px"
+              ><a href="mailto://vishwesh@sifar.vc" target="_blank"
+                >📧 vishwesh@sifar.vc</a
+              ></span
+            >
+            <span style="margin-right: 10px"
+              ><a href="mailto://akshay@sifar.vc" target="_blank"
+                >📧 akshay@sifar.vc</a
+              ></span
+            >
+          </div>
+        </div>
+        <div class="row" style="padding-top: 10px">
+          <div class="col-12 text-center">2012-2021</div>
+          <div class="col-12 text-center">All Rights Reserved.</div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center" style="font-weight: 600">
+            ❤️ Sifar Ventures LLP
+          </div>
+        </div>
+      </div>
     </div>
-
   </body>
 </html>

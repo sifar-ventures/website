@@ -1,0 +1,150 @@
+<div
+  class="
+    topbar
+    d-md-flex
+    justify-content-center
+    flex-items-center
+    align-items-center
+  "
+  style="flex-direction: column"
+>
+  {% assign current = page.url | downcase | split: '/' %}
+</div>
+<div
+  class="d-flex flex-row"
+  style="width: 100%; align-items: center; justify-content: center"
+>
+  <div class="d-flex flex-row" style="margin-top: 50px">
+    <div style="margin-right: 10px">
+      <img
+        style="max-width: 80px; border-radius: 5px"
+        class="img-fluid"
+        src="/public/images/logo.png"
+      />
+    </div>
+    <br class="d-block d-md-none" />
+    <div style="font-size: 52px">
+      <span
+        style="
+          font-family: 'Source Sans Pro', 'Gill Sans MT', Calibri,
+            'Trebuchet MS', sans-serif;
+          font-weight: 200;
+        "
+        ><span
+          style="font-family: 'Source Sans Pro', sans-serif; font-weight: 900"
+          >sifar</span
+        >ventures</span
+      >
+    </div>
+  </div>
+</div>
+<div class="container">
+  <ul
+    class="d-flex navbar-nav"
+    style="
+      color: #000;
+      font-family: 'Montserrat';
+      margin-top: 20px;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    "
+  >
+    <li class="nav-item">
+      <a
+        class="
+          topbar-nav-item{%
+          if
+          current[1]
+          ==
+          undefined
+          %}
+          active{%
+          endif
+          %}
+        "
+        href="/"
+        >🏡 Home</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="
+          topbar-nav-item
+          {%
+          if
+          current[1]
+          ==
+          'intro'
+          %}
+          active
+          {%
+          endif
+          %}
+        "
+        href="/manifesto"
+        >📇 Manifesto</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="
+          topbar-nav-item
+          {%
+          if
+          current[1]
+          ==
+          'writing'
+          or
+          current[1]
+          ==
+          'blog'
+          %}
+          active
+          {%
+          endif
+          %}
+        "
+        href="/writing"
+        >✍️ Essays</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="
+          topbar-nav-item
+          {%
+          if
+          current[1]
+          ==
+          'products'
+          or
+          current[1]
+          ==
+          'products'
+          %}
+          active
+          {%
+          endif
+          %}
+        "
+        href="/products"
+        >🏆 Portfolio</a
+      >
+    </li>
+    {% comment %} The code below dynamically generates a sidebar nav of pages
+    with `layout: page` in the front-matter. See readme for usage. {% endcomment
+    %} {% assign pages_list = site.pages %} {% for node in pages_list %} {% if
+    node.title != null %} {% if node.layout == "page" %}
+    <li class="nav-item">
+      <a
+        class="topbar-nav-item{% if page.url == node.url %} active{% endif %}"
+        href="{{ node.url }}"
+        >{{ node.title }}</a
+      >
+    </li>
+    {% endif %} {% endif %} {% endfor %}
+  </ul>
+</div>
