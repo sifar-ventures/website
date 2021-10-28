@@ -30,7 +30,7 @@
  */
 
 html {
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat';
 }
 @media (min-width: 48em) {
   html {
@@ -39,7 +39,7 @@ html {
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
