@@ -25,11 +25,12 @@ Culture matters! Period. Strategy is important but requires a strong culture for
 
 ## What we look in founders? ##
 Five C's we look in our partner founders:
-Curiosity
-Courage
-Commitment
-Conviction
-Confidence
+* Curiosity
+* Courage
+* Commitment
+* Conviction
+* Confidence
+
 
 
 
