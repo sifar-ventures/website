@@ -1,3 +1,7 @@
+body {
+  background-color: #fffefc;
+}
+
 .video-container {
   position: relative;
   padding-bottom: 30%;
@@ -28,6 +32,7 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 50rem;
+  font-family: 'Special Elite';
 }
 
 .content {
@@ -73,6 +78,7 @@
 }
 
 .topbar-nav-item {
+  font-family: 'Special Elite';
   padding-left: 10px;
   padding-right: 10px;
   color: #242424;
@@ -85,6 +91,7 @@
 
 .footer {
   padding: 10px;
+  font-family: 'Special Elite';
   text-align: center;
   color: darkgray;
   font-size: 16px;
@@ -136,6 +143,11 @@
 h1,
 h2 {
   color: #000;
+}
+
+.page {
+  font-family: 'Montserrat';
+  font-size: 17px;
 }
 
 .pagination {
