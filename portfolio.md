@@ -3,7 +3,7 @@ layout: default
 title: Portfolio
 ---
 
-<img src="./public/images/peerlist_logo.png" width="200" height="61" />
+<img src="{{site.baseurl}}/public/images/peerlist_logo.png" width="200" height="61" />
 
 ## 🖖 Our first Investment - Peerlist ##
 >Your most meaningful professional network
